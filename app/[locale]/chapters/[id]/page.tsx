@@ -1,4 +1,4 @@
-import ChapterLessons from "@/components/chapters/ChapterLessons";
+
 import {mathCurriculum} from '@/messages/mathCurriculum.json'
 
 
@@ -15,7 +15,7 @@ const ChapterPage = ({params}:{params:{id:string}}) => {
 
   return (
     <div>
-      <ChapterLessons chapter={chapter} />
+      Working on this page
     </div>
   );
 };
