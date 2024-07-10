@@ -10,7 +10,7 @@ import { useLocale } from "next-intl";
 interface Chapter {
   id: string;
   title: string;
-  icon: keyof typeof LucideIcons;
+  icon: string;
   description: string;
 }
 
@@ -28,6 +28,7 @@ const ChapterIntroduction: React.FC<ChapterIntroductionProps> = ({
       <h2 className="text-4xl font-bold mb-12 text-center">Math Chapters</h2>
       <div className="flex items-center justify-center gap-8 flex-wrap">
         {chapters?.map((chapter, index) => {
+          {/* @ts-ignore */}
           const IconComponent = LucideIcons[chapter.icon];
 
           return (
