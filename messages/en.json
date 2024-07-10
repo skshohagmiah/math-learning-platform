@@ -1,0 +1,39 @@
+{
+  "Header": {
+    "title": "Math Learning",
+    "lessons": "Lessons",
+    "leaderboard": "Leaderboard",
+    "profile": "Profile",
+    "lightMode": "Light Mode",
+    "darkMode": "Dark Mode",
+    "login": "Login"
+  },
+  "Hero": {
+    "title": "Discover the World of",
+    "colorfulTitle": "Mathematics",
+    "description": "Explore and learn mathematics through interactive, visual, and engaging examples. Enhance your skills with fun and challenging problems tailored for all levels.",
+    "interactiveExampleTitle": "Interactive Math Example",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More"
+  },
+  "HowItWorks": {
+    "title": "How It Works",
+    "steps": [
+      {
+        "title": "Choose a Chapter",
+        "description": "Browse our wide range of math chapters and select the one that interests you."
+      },
+      {
+        "title": "Interactive Lessons",
+        "description": "Engage with our interactive lessons, complete with visualizations and practice problems."
+      },
+      {
+        "title": "Track Progress",
+        "description": "Monitor your progress and earn achievements as you advance through the course."
+      }
+    ]
+  }
+  
+  
+  
+}

@@ -1,0 +1,291 @@
+{
+  "mathCurriculum": [
+    {
+      "id": "basic-math",
+      "title": "Basic Mathematics",
+      "icon": "Calculator",
+      "description": "Fundamental mathematical concepts and operations that form the foundation for more advanced topics.",
+      "chapters": [
+        {
+          "id": "numbers",
+          "title": "Numbers and Counting",
+          "icon": "Hash",
+          "lessons": [
+            {
+              "id": "natural-numbers",
+              "title": "Natural Numbers",
+              "explanation": "Introduction to counting numbers, including their properties and basic arithmetic operations."
+            },
+            {
+              "id": "integers",
+              "title": "Integers",
+              "explanation": "Understanding positive and negative whole numbers, including zero, and how to perform operations with them."
+            },
+            {
+              "id": "fractions",
+              "title": "Fractions",
+              "explanation": "Learning about parts of a whole, equivalent fractions, and operations involving fractions."
+            },
+            {
+              "id": "decimals",
+              "title": "Decimals",
+              "explanation": "Understanding decimal numbers, their place values, and operations involving decimals."
+            },
+            {
+              "id": "percentages",
+              "title": "Percentages",
+              "explanation": "Converting between fractions, decimals, and percentages, and solving percentage problems."
+            }
+          ]
+        },
+        {
+          "id": "basic-operations",
+          "title": "Basic Operations",
+          "icon": "Plus",
+          "lessons": [
+            {
+              "id": "addition-subtraction",
+              "title": "Addition and Subtraction",
+              "explanation": "Mastering the basics of adding and subtracting numbers, including word problems."
+            },
+            {
+              "id": "multiplication-division",
+              "title": "Multiplication and Division",
+              "explanation": "Understanding multiplication as repeated addition and division as fair sharing or grouping."
+            },
+            {
+              "id": "order-of-operations",
+              "title": "Order of Operations",
+              "explanation": "Learning the correct order to perform mathematical operations using the BODMAS/BIDMAS rules."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "algebra",
+      "title": "Algebra",
+      "icon": "Variable",
+      "description": "Study of mathematical symbols and the rules for manipulating these symbols, which is a fundamental part of higher mathematics.",
+      "chapters": [
+        {
+          "id": "expressions",
+          "title": "Algebraic Expressions",
+          "icon": "Component",
+          "lessons": [
+            {
+              "id": "variables",
+              "title": "Variables and Constants",
+              "explanation": "Introduction to letters representing unknown quantities and constants in algebraic expressions."
+            },
+            {
+              "id": "simplify-expressions",
+              "title": "Simplifying Expressions",
+              "explanation": "Combining like terms and performing basic algebraic operations to simplify expressions."
+            },
+            {
+              "id": "polynomials",
+              "title": "Polynomials",
+              "explanation": "Understanding polynomials, their degrees, and operations involving polynomials."
+            }
+          ]
+        },
+        {
+          "id": "equations",
+          "title": "Equations and Inequalities",
+          "icon": "EqualNot",
+          "lessons": [
+            {
+              "id": "linear-equations",
+              "title": "Linear Equations",
+              "explanation": "Solving equations with one unknown variable and understanding their graphical representations."
+            },
+            {
+              "id": "quadratic-equations",
+              "title": "Quadratic Equations",
+              "explanation": "Solving quadratic equations using various methods, including factoring, completing the square, and the quadratic formula."
+            },
+            {
+              "id": "inequalities",
+              "title": "Linear Inequalities",
+              "explanation": "Understanding and solving inequalities and representing their solutions graphically."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geometry",
+      "title": "Geometry",
+      "icon": "Triangle",
+      "description": "Study of shapes, sizes, and positions of figures, as well as the properties of space.",
+      "chapters": [
+        {
+          "id": "basics-geometry",
+          "title": "Basic Geometric Concepts",
+          "icon": "Square",
+          "lessons": [
+            {
+              "id": "points-lines",
+              "title": "Points and Lines",
+              "explanation": "Understanding fundamental geometric elements like points, lines, and line segments."
+            },
+            {
+              "id": "angles",
+              "title": "Angles",
+              "explanation": "Types of angles, their properties, and how to measure them."
+            },
+            {
+              "id": "shapes",
+              "title": "Basic Shapes",
+              "explanation": "Identifying and understanding the properties of basic shapes such as circles, squares, and triangles."
+            }
+          ]
+        },
+        {
+          "id": "polygons",
+          "title": "Polygons",
+          "icon": "Hexagon",
+          "lessons": [
+            {
+              "id": "triangles",
+              "title": "Triangles",
+              "explanation": "Properties and types of triangles, including isosceles, equilateral, and scalene triangles."
+            },
+            {
+              "id": "quadrilaterals",
+              "title": "Quadrilaterals",
+              "explanation": "Understanding four-sided shapes such as squares, rectangles, and parallelograms."
+            },
+            {
+              "id": "other-polygons",
+              "title": "Other Polygons",
+              "explanation": "Properties of other polygons like pentagons, hexagons, and how to calculate their areas and perimeters."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trigonometry",
+      "title": "Trigonometry",
+      "icon": "WaveSine",
+      "description": "Study of relationships between side lengths and angles of triangles, with applications in various fields.",
+      "chapters": [
+        {
+          "id": "trig-functions",
+          "title": "Trigonometric Functions",
+          "icon": "Function",
+          "lessons": [
+            {
+              "id": "sine-cosine",
+              "title": "Sine and Cosine",
+              "explanation": "Understanding the basic trigonometric functions and their applications."
+            },
+            {
+              "id": "tangent",
+              "title": "Tangent and Cotangent",
+              "explanation": "Exploring the tangent function, its reciprocal cotangent, and their properties."
+            },
+            {
+              "id": "unit-circle",
+              "title": "Unit Circle",
+              "explanation": "Learning about the unit circle and how it relates to trigonometric functions."
+            }
+          ]
+        },
+        {
+          "id": "trig-identities",
+          "title": "Trigonometric Identities",
+          "icon": "Equal",
+          "lessons": [
+            {
+              "id": "pythagorean-identity",
+              "title": "Pythagorean Identity",
+              "explanation": "The fundamental trigonometric identity derived from the Pythagorean theorem."
+            },
+            {
+              "id": "sum-difference",
+              "title": "Sum and Difference Formulas",
+              "explanation": "Formulas for the sine and cosine of sums and differences, and their applications."
+            },
+            {
+              "id": "double-half-angle",
+              "title": "Double and Half-Angle Formulas",
+              "explanation": "Exploring the formulas for double and half-angles and their uses."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "calculus",
+      "title": "Calculus",
+      "icon": "Infinity",
+      "description": "Study of continuous change, covering concepts of limits, derivatives, integrals, and their applications.",
+      "chapters": [
+        {
+          "id": "limits",
+          "title": "Limits and Continuity",
+          "icon": "MoveHorizontal",
+          "lessons": [
+            {
+              "id": "intro-limits",
+              "title": "Introduction to Limits",
+              "explanation": "Understanding the concept of limits and their importance in calculus."
+            },
+            {
+              "id": "continuity",
+              "title": "Continuity of Functions",
+              "explanation": "Exploring continuous and discontinuous functions and how to determine continuity."
+            }
+          ]
+        },
+        {
+          "id": "derivatives",
+          "title": "Derivatives",
+          "icon": "LineChart",
+          "lessons": [
+            {
+              "id": "definition-derivative",
+              "title": "Definition of the Derivative",
+              "explanation": "Understanding the rate of change of a function and its graphical interpretation."
+            },
+            {
+              "id": "rules-differentiation",
+              "title": "Rules of Differentiation",
+              "explanation": "Learning techniques for finding derivatives, including the product, quotient, and chain rules."
+            },
+            {
+              "id": "applications-derivatives",
+              "title": "Applications of Derivatives",
+              "explanation": "Exploring practical applications of derivatives in various fields."
+            }
+          ]
+        },
+        {
+          "id": "integrals",
+          "title": "Integrals",
+          "icon": "Sigma",
+          "lessons": [
+            {
+              "id": "indefinite-integrals",
+              "title": "Indefinite Integrals",
+              "explanation": "Introduction to antiderivatives and their properties."
+            },
+            {
+              "id": "definite-integrals",
+              "title": "Definite Integrals",
+              "explanation": "Calculating areas under curves and understanding the Fundamental Theorem of Calculus."
+            },
+            {
+              "id": "applications-integrals",
+              "title": "Applications of Integrals",
+              "explanation": "Exploring the applications of integrals in various fields, including physics and engineering."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
