@@ -1,7 +1,7 @@
 {
   "Header": {
     "title": "Math Learning",
-    "lessons": "Lessons",
+    "feedback": "Feedback",
     "leaderboard": "Leaderboard",
     "profile": "Profile",
     "lightMode": "Light Mode",
@@ -32,8 +32,175 @@
         "description": "Monitor your progress and earn achievements as you advance through the course."
       }
     ]
+  },
+  "MathChapters": {
+    "title": "Math Chapters",
+    "chapters": [
+      {
+        "id": "number-theory",
+        "title": "Number Theory",
+        "icon": "Hash",
+        "description": "Study of integers and their properties, including prime numbers, divisibility, and congruences."
+      },
+      {
+        "id": "arithmetic",
+        "title": "Arithmetic",
+        "icon": "Plus",
+        "description": "Basic operations with numbers, including addition, subtraction, multiplication, and division."
+      },
+      {
+        "id": "algebra-basics",
+        "title": "Algebra Basics",
+        "icon": "Variable",
+        "description": "Introduction to variables, equations, and basic algebraic operations."
+      },
+      {
+        "id": "geometry-basics",
+        "title": "Geometry Basics",
+        "icon": "Triangle",
+        "description": "Introduction to shapes, angles, and basic geometric concepts."
+      },
+      {
+        "id": "calculus",
+        "title": "Calculus",
+        "icon": "Infinity",
+        "description": "Study of continuous change, including limits, derivatives, and integrals."
+      },
+      {
+        "id": "statistics-probability",
+        "title": "Statistics and Probability",
+        "icon": "BarChart",
+        "description": "Collecting, analyzing, and interpreting data; understanding chance and likelihood."
+      },
+      {
+        "id": "linear-algebra",
+        "title": "Linear Algebra",
+        "icon": "Grid",
+        "description": "Study of linear equations and their representations in vector spaces."
+      },
+      {
+        "id": "discrete-mathematics",
+        "title": "Discrete Mathematics",
+        "icon": "Hash",
+        "description": "Study of mathematical structures that are fundamentally discrete rather than continuous."
+      },
+      {
+        "id": "trigonometry",
+        "title": "Trigonometry",
+        "icon": "WaveSine",
+        "description": "Study of relationships between sides and angles of triangles."
+      }
+    ],
+    "exploreChapter": "Explore Chapter"
+
+  },
+  "NumberTheory": {
+  "title": "Number Theory",
+  "introduction": "Number Theory is the study of integers and their properties. It's a foundational area of mathematics with applications in cryptography, computer science, and more.",
+  "lessons": [
+    {
+      "id": "intro-number-theory",
+      "title": "Introduction to Number Theory",
+      "description": "Learn the basics of number theory and its importance in mathematics.",
+      "topics": [
+        "Definition and scope of number theory",
+        "Historical background",
+        "Applications in modern mathematics and computer science"
+      ]
+    },
+    {
+      "id": "divisibility-primes",
+      "title": "Divisibility and Prime Numbers",
+      "description": "Explore the concepts of divisibility and prime numbers.",
+      "topics": [
+        "Divisibility rules",
+        "Prime numbers and their properties",
+        "The Fundamental Theorem of Arithmetic"
+      ]
+    },
+    {
+      "id": "modular-arithmetic",
+      "title": "Modular Arithmetic",
+      "description": "Understand the principles of modular arithmetic and its applications.",
+      "topics": [
+        "Congruences",
+        "Modular exponentiation",
+        "Applications in cryptography"
+      ]
+    },
+    {
+      "id": "diophantine-equations",
+      "title": "Diophantine Equations",
+      "description": "Study equations with integer solutions and their properties.",
+      "topics": [
+        "Linear Diophantine equations",
+        "Pythagorean triples",
+        "Fermat's Last Theorem"
+      ]
+    },
+    {
+      "id": "number-theoretic-functions",
+      "title": "Number-Theoretic Functions",
+      "description": "Explore important functions in number theory.",
+      "topics": [
+        "Euler's totient function",
+        "Möbius function",
+        "Divisor function"
+      ]
+    }
+  ],
+  "startLearning": "Start Learning",
+  "viewTopics": "View Topics",
+  "hideTopics": "Hide Topics"
+},
+"IntroNumberTheory": {
+  "title": "Introduction to Number Theory",
+  "sections": [
+    {
+      "title": "What is Number Theory?",
+      "content": "Number Theory is a branch of mathematics that studies the properties of integers. It's often considered one of the purest forms of mathematics, yet it has surprising applications in modern technology, especially in cryptography and computer science."
+    },
+    {
+      "title": "Historical Background",
+      "content": "Number Theory has a rich history dating back to ancient civilizations. Mathematicians like Pythagoras, Euclid, and Diophantus made significant contributions. In more recent times, figures like Fermat, Euler, and Riemann have advanced the field tremendously."
+    },
+    {
+      "title": "Key Concepts",
+      "content": "Some fundamental concepts in Number Theory include:\n- Prime numbers\n- Divisibility\n- Congruences\n- Diophantine equations"
+    }
+  ],
+  "interactiveSection": {
+    "title": "Interactive Prime Checker",
+    "instruction": "Enter a number to check if it's prime:",
+    "checkButton": "Check",
+    "resultPrime": "is prime!",
+    "resultNotPrime": "is not prime.",
+    "tryAgain": "Try another number"
+  },
+  "quiz": {
+    "title": "Quick Quiz",
+    "questions": [
+      {
+        "question": "What is the smallest prime number?",
+        "options": ["1", "2", "3", "0"],
+        "correctAnswer": 1
+      },
+      {
+        "question": "Which of these is NOT a key area in Number Theory?",
+        "options": ["Prime numbers", "Divisibility", "Calculus", "Congruences"],
+        "correctAnswer": 2
+      },
+      {
+        "question": "Who is known as the 'Father of Number Theory'?",
+        "options": ["Euclid", "Pythagoras", "Fermat", "Gauss"],
+        "correctAnswer": 2
+      }
+    ],
+    "submitQuiz": "Submit Answers",
+    "yourScore": "Your Score:",
+    "outOf": "out of",
+    "tryAgain": "Try Again"
   }
-  
-  
+}
   
 }

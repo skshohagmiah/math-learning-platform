@@ -9,7 +9,7 @@ const HowItWorks: React.FC = () => {
   const stepCount = t.raw('steps').length;
 
   return (
-    <section className="py-16 mb-8">
+    <section className="py-32">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-12 text-center">{t("title")}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

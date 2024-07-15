@@ -181,9 +181,6 @@ const Hero: React.FC = () => {
             </button>
           </div>
         </motion.div>
-         <Link href={'/chapters'} className='flex items-center justify-center mt-8'>
-         <Button className='py-8 px-12 rounded-full border-b-4'>Start Learning Math</Button>
-         </Link>
       </div>
     </section>
   );

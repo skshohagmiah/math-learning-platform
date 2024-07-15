@@ -4,8 +4,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import * as LucideIcons from "lucide-react";
-import { Button } from "../ui/button";
-import { useLocale } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import { Card } from "../ui/card";
 
 interface Chapter {
   id: string;
@@ -14,48 +14,50 @@ interface Chapter {
   description: string;
 }
 
-interface ChapterIntroductionProps {
-  chapters: Chapter[];
-}
-
-const ChapterIntroduction: React.FC<ChapterIntroductionProps> = ({
-  chapters,
-}) => {
+const ChapterIntroduction: React.FC = () => {
+  const t = useTranslations('MathChapters');
   const locale = useLocale();
+  const chapters: Chapter[] = t.raw('chapters') as Chapter[];
 
   return (
-    <div className="mx-auto px-4 py-12 my-4 min-h-screen relative">
-      <h2 className="text-4xl font-bold mb-12 text-center">Math Chapters</h2>
-      <div className="flex items-center justify-center gap-8 flex-wrap">
-        {chapters?.map((chapter, index) => {
-          {/* @ts-ignore */}
-          const IconComponent = LucideIcons[chapter.icon];
-
-          return (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-              className="bg-white border dark:bg-slate-800 rounded-lg shadow-xl p-4 w-80 h-80 flex items-center justify-center flex-col mb-12"
-            >
-              <div className="flex items-center mb-2">
-                {IconComponent && (
-                  <IconComponent className="w-10 h-10 mr-2 text-blue-500" />
-                )}
-                <h3 className="text-xl font-semibold">{chapter.title}</h3>
-              </div>
-              <p className="text-muted-foreground text-center mb-4">
-                {chapter.description}
-              </p>
-              <Link href={`${locale}/chapters/${chapter.id}`}>
-                <Button className="inline-block rounded-full bg-blue-500 text-white py-2 px-8 text-center hover:bg-blue-600 transition duration-300">
-                  Explore Chapter
-                </Button>
-              </Link>
-            </motion.div>
-          );
-        })}
+    <div className="min-h-screen py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-4xl font-extrabold text-center text-gray-900 dark:text-white mb-12">
+          {t('title')}
+        </h2>
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {chapters?.map((chapter, index) => {
+            const IconComponent = LucideIcons[chapter.icon as keyof typeof LucideIcons];
+            return (
+              <motion.div
+                key={chapter.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              >
+                <Card className="p-6 w-full h-full flex items-center justify-center flex-col dark:bg-slate-800">
+                  <div className="flex items-center justify-center w-16 h-16 bg-green-500 rounded-full mb-4 mx-auto">
+                    {/* ts-ignore */}
+                    {IconComponent && <IconComponent className="w-8 h-8 text-white" />}
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white text-center mb-2">
+                    {chapter.title}
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-300 text-center mb-4">
+                    {chapter.description}
+                  </p>
+                  <Link 
+                    href={`/${locale}/chapters/${chapter.id}`}
+                    className="block w-full text-center bg-blue-500 hover:bg-blue-600 text-white font-semibold py-4 px-8 rounded-full border-b-4 transition duration-300"
+                  >
+                    {t('exploreChapter')}
+                  </Link>
+                </Card>
+              </motion.div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
