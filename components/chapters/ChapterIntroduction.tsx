@@ -7,10 +7,12 @@ import * as LucideIcons from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
 import { Card } from "../ui/card";
 
+type IconType = (props: React.ComponentProps<'svg'>) => JSX.Element;
+
 interface Chapter {
   id: string;
   title: string;
-  icon: string;
+  icon: keyof typeof LucideIcons;
   description: string;
 }
 
@@ -27,7 +29,7 @@ const ChapterIntroduction: React.FC = () => {
         </h2>
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {chapters?.map((chapter, index) => {
-            const IconComponent = LucideIcons[chapter.icon as keyof typeof LucideIcons];
+            const IconComponent = LucideIcons[chapter.icon] as IconType;
             return (
               <motion.div
                 key={chapter.id}
@@ -38,8 +40,7 @@ const ChapterIntroduction: React.FC = () => {
               >
                 <Card className="p-6 w-full h-full flex items-center justify-center flex-col dark:bg-slate-800">
                   <div className="flex items-center justify-center w-16 h-16 bg-green-500 rounded-full mb-4 mx-auto">
-                    {/* ts-ignore */}
-                    {IconComponent && <IconComponent className="w-8 h-8 text-white" />}
+                    {typeof IconComponent === 'function' && <IconComponent className="w-8 h-8 text-white" />}
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white text-center mb-2">
                     {chapter.title}

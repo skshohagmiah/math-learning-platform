@@ -17,6 +17,8 @@ const ChapterPage = ({params}:{params:{name:string}}) => {
     //   return <GeometryBasics/>
     // case 'calculus':
     //   return <Calculus/>
+    case "default":
+      return <div>Working on this page</div>
   }
 
 };
