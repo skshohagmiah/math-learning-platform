@@ -19,7 +19,7 @@ const Header: React.FC = () => {
         <div className="text-xl font-bold">
           <Link
             href="/"
-            className="text-green-500 capitalize text-2xl flex items-center"
+            className="text-green-500 capitalize text-2xl flex items-center text-bold"
           >
             <Hash />
             Math<span className="text-blue-500">Shikhe</span>

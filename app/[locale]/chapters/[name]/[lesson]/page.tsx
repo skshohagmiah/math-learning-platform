@@ -11,9 +11,8 @@ const LessonPage = ({
   switch (lesson) {
     case "intro-number-theory":
       return <IntroNumberTheory />;
-
-    case "default":
-      return <div>Working on this page</div>;
+    default:
+      return <div className="h-screen font-bold text-2xl flex items-center justify-center text-rose-500">Working on this page</div>;
   }
 };
 
